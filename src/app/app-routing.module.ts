@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Route, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { BeerListComponent } from '../beer-list/beer-list.component';
 
 const routes: Route[] = [

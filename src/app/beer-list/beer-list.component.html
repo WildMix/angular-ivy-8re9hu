@@ -1,3 +1,8 @@
-<ul *ngFor="let beer of beers">
-  <li>{{ beer.beerName }}</li>
-</ul>
+<div class="card shadow">
+  <h5 class="card-header">Beer List</h5>
+  <div class="card-body">
+    <ul class="list-group" *ngFor="let beer of beers">
+      <li>{{ beer.beerName }}</li>
+    </ul>
+  </div>
+</div>

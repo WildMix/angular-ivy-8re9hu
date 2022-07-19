@@ -1,5 +1,5 @@
 import { Beer } from '../model/model';
-const beersData: Beer[] = [
+export const beersData: Beer[] = [
   {
     id: 1,
     beerName: 'Mango Bobs',

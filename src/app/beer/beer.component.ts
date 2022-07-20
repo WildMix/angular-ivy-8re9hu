@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BeerServiceService } from '../beer-service.service';
 import { Beer } from '../model/model';
 @Component({
   selector: 'app-beer',
@@ -9,7 +10,11 @@ export class BeerComponent implements OnInit {
   @Input()
   beer: Beer;
 
-  constructor() {}
+  constructor(private beerService: BeerServiceService) {}
 
   ngOnInit() {}
+
+  onDelete() {
+    this.beerService.deleteBeer(this.beer);
+  }
 }

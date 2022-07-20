@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
 import { beersData } from '../data/beer-list';
-@Injectable({
+import { Beer } from '../model/model';
 
-  providedIn: 'root';
-}
-
-)
-
-@Injectable({providedIn : 'root'})
+@Injectable({ providedIn: 'root' })
 export class BeerServiceService {
+  private beers = beersData;
 
-  constructor() { }
+  constructor() {}
 
-  getBeerList(){
+  getBeerList() {
     return beersData;
   }
 
+  deleteBeer(beer: Beer) {
+    this.beers = this.beers.filter((item) => beer.id !== item.id);
+  }
 }

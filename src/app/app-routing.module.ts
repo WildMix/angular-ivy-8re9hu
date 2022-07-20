@@ -1,3 +1,4 @@
+/*
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BeerListComponent } from '../beer-list/beer-list.component';
@@ -23,3 +24,4 @@ const routes: Route[] = [
   declarations: [RouterModule],
 })
 export class AppRoutingModule {}
+*/
